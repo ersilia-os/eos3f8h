@@ -2,47 +2,51 @@ Identifier: eos3f8h
 Slug: eu-openscreen-hts
 Status: In progress
 Title: eu-openscreen-hts
-Description: High throughput screening of the EU OpenScreen library (~100.000 
-  compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. 
-  coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were 
-  obtained from the European Chemical Biology Database and correspond to single 
-  point inhibitions with cut-offs ranging from 50 to 70% and incubation 
-  concentrations between 41.7 to 50 uM. Models were trained by Ersilia using 
-  LazyQSAR v3, achieving AUROCs ~ upon 5-fold crossvalidation
+Description: High throughput screening of the EU OpenScreen library (~100.000
+  compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E.
+  coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were
+  obtained from the European Chemical Biology Database and correspond to single
+  point inhibitions with cut-offs ranging from 50 to 70% and incubation
+  concentrations between 41.7 to 50 uM. Models were trained by Ersilia using
+  LazyQSAR v3, achieving a mean AUROC of 0.94 (range 0.84-0.99) upon 5-fold
+  crossvalidation.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: Internal
+Task: Annotation
+Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
   - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 7
+Output Consistency: Fixed
+Interpretation: Rank score per pathogen between 0 and 1; higher values indicate
+  greater predicted probability of growth inhibition.
 Tag:
   - Antimicrobial activity
+  - Antifungal activity
   - ESKAPE
   - Gram-negative bacteria
   - Gram-positive bacteria
+  - Fungi
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Antimicrobial resistance
+  - Candidiasis
+  - Fungal infections
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
-Publication Year: 2026
+  - Acinetobacter baumannii
+  - Candida albicans
+  - Escherichia coli
+  - Enterococcus faecalis
+  - Klebsiella pneumoniae
+  - Pseudomonas aeruginosa
+  - Staphylococcus aureus
+Publication Type: Peer reviewed
+Publication Year: 2024
 Publication: https://doi.org/10.1093/nar/gkae904
-Source Code: https://github.com/ersilia-os/lazy-qsar
+Source Code: https://github.com/ersilia-os/eu-openscreen-antimicrobial-tasks
 License: GPL-3.0-or-later
 Contributor: GemmaTuron
