@@ -1,33 +1,39 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos3f8h
+Slug: eu-openscreen-hts
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: eu-openscreen-hts
+Description: High throughput screening of the EU OpenScreen library (~100.000 
+  compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. 
+  coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were 
+  obtained from the European Chemical Biology Database and correspond to single 
+  point inhibitions with cut-offs ranging from 50 to 70% and incubation 
+  concentrations between 41.7 to 50 uM. Models were trained by Ersilia using 
+  LazyQSAR v3, achieving AUROCs ~ upon 5-fold crossvalidation
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Antimicrobial activity
+  - ESKAPE
+  - Gram-negative bacteria
+  - Gram-positive bacteria
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +42,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2026
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://doi.org/10.1093/nar/gkae904
+Source Code: https://github.com/ersilia-os/lazy-qsar
+License: GPL-3.0-or-later
+Contributor: GemmaTuron
