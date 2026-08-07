@@ -2,8 +2,7 @@
 
 High throughput screening of the EU OpenScreen library (~100.000 compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were obtained from the European Chemical Biology Database and correspond to single point inhibitions with cut-offs ranging from 50 to 70% and incubation concentrations between 41.7 to 50 uM. Models were trained by Ersilia using LazyQSAR v3, achieving a mean AUROC of 0.94 (range 0.84-0.99) upon 5-fold crossvalidation.
 
-This model was incorporated on 2026-08-06.
-
+This model was incorporated on 2026-08-06.Last packaged on 2026-08-07.
 
 ## Information
 ### Identifiers
@@ -41,12 +40,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3f8h](https://hub.docker.com/r/ersiliaos/eos3f8h)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3f8h.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3f8h.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `529`
 - **Environment Size (Mb):** `3572`
+- **Image Size (Mb):** `4539.75`
 
+**Computational Performance (seconds):**
+- 10 inputs: `91.87`
+- 100 inputs: `82.35`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/eu-openscreen-antimicrobial-tasks](https://github.com/ersilia-os/eu-openscreen-antimicrobial-tasks)
