@@ -51,7 +51,7 @@ Source Code: https://github.com/ersilia-os/eu-openscreen-antimicrobial-tasks
 License: GPL-3.0-or-later
 Contributor: GemmaTuron
 Incorporation Date: '2026-08-06'
-Last Packaging Date: '2026-08-07'
+Last Packaging Date: '2026-08-11'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3f8h.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos3f8h
@@ -60,9 +60,9 @@ Docker Architecture:
   - ARM64
 Model Size: 529.0
 Environment Size: 3573.0
-Image Size: 4539.75
-Computational Performance 1: 91.87
-Computational Performance 2: 81.42
-Computational Performance 3: 82.35
-Computational Performance 4: 677.31
+Image Size: 4540.66
+Computational Performance 1: 84.89
+Computational Performance 2: 71.41
+Computational Performance 3: 78.53
+Computational Performance 4: 564.48
 Computational Performance 5: -1.0
