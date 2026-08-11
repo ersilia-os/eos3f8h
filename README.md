@@ -2,7 +2,7 @@
 
 High throughput screening of the EU OpenScreen library (~100.000 compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were obtained from the European Chemical Biology Database and correspond to single point inhibitions with cut-offs ranging from 50 to 70% and incubation concentrations between 41.7 to 50 uM. Models were trained by Ersilia using LazyQSAR v3, achieving a mean AUROC of 0.94 (range 0.84-0.99) upon 5-fold crossvalidation.
 
-This model was incorporated on 2026-08-06.Last packaged on 2026-08-07.
+This model was incorporated on 2026-08-06.Last packaged on 2026-08-11.
 
 ## Information
 ### Identifiers
@@ -47,11 +47,11 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `529`
 - **Environment Size (Mb):** `3573`
-- **Image Size (Mb):** `4539.75`
+- **Image Size (Mb):** `4540.66`
 
 **Computational Performance (seconds):**
-- 10 inputs: `91.87`
-- 100 inputs: `82.35`
+- 10 inputs: `84.89`
+- 100 inputs: `78.53`
 - 10000 inputs: `-1`
 
 ### References
