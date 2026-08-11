@@ -1,7 +1,7 @@
 Identifier: eos3f8h
 Slug: eu-openscreen-hts
 Status: Ready
-Title: eu-openscreen-hts
+Title: Antimicrobial activity prediction from EU OpenScreen data
 Description: High throughput screening of the EU OpenScreen library (~100.000 
   compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. 
   coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were 
