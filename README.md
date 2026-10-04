@@ -1,6 +1,6 @@
 # Antimicrobial activity prediction from EU OpenScreen data
 
-High throughput screening of the EU OpenScreen library (~100.000 compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were obtained from the European Chemical Biology Database and correspond to single point inhibitions with cut-offs ranging from 50 to 70% and incubation concentrations between 41.7 to 50 uM. Models were trained by Ersilia using LazyQSAR v3, achieving a mean AUROC of 0.94 (range 0.84-0.99) upon 5-fold crossvalidation.
+Predicts growth inhibition across seven reference pathogens spanning Gram-negative and Gram-positive bacteria and Candida albicans. The training data come from an EU OpenScreen campaign in which roughly 100,000 compounds were screened through the European Chemical Biology Library, giving unusually consistent coverage since all seven organisms were tested against the same collection. Models were built with LazyQSAR and report a rank score rather than a calibrated probability.
 
 This model was incorporated on 2026-08-06.Last packaged on 2026-08-11.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-08-06.Last packaged on 2026-08-11.
 ### Output
 - **Output Dimension:** `7`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Rank score per pathogen between 0 and 1; higher values indicate greater predicted probability of growth inhibition.
+- **Interpretation:** Rank score per pathogen from 0 to 1, where higher values indicate greater predicted growth inhibition.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
