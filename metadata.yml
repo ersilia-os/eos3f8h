@@ -23,8 +23,8 @@ Output:
   - Score
 Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: Rank score per pathogen from 0 to 1, where higher values indicate
-  greater predicted growth inhibition.
+Interpretation: Rank score per pathogen from 0 to 1, where higher values 
+  indicate greater predicted growth inhibition.
 Tag:
   - Antimicrobial activity
   - Antifungal activity
