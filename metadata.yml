@@ -2,12 +2,14 @@ Identifier: eos3f8h
 Slug: eu-openscreen-hts
 Status: Ready
 Title: Antimicrobial activity prediction from EU OpenScreen data
-Description: Predicts growth inhibition across seven reference pathogens spanning
-  Gram-negative and Gram-positive bacteria and Candida albicans. The training data
-  come from an EU OpenScreen campaign in which roughly 100,000 compounds were screened
-  through the European Chemical Biology Library, giving unusually consistent coverage
-  since all seven organisms were tested against the same collection. Models were built
-  with LazyQSAR and report a rank score rather than a calibrated probability.
+Description: High throughput screening of the EU OpenScreen library (~100.000 
+  compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. 
+  coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were 
+  obtained from the European Chemical Biology Database and correspond to single 
+  point inhibitions with cut-offs ranging from 50 to 70% and incubation 
+  concentrations between 41.7 to 50 uM. Models were trained by Ersilia using 
+  LazyQSAR v3.6, achieving a mean AUROC of 0.94 (range 0.83-0.98) upon 5-fold 
+  crossvalidation.
 Deployment:
   - Local
 Source: Local

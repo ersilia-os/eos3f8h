@@ -1,6 +1,6 @@
 {
   "task": "classification",
-  "scaler": "robust",
+  "scaler": "power",
   "reducer": "variance_threshold",
   "n_features_in": 217,
   "n_features_out": 207,
