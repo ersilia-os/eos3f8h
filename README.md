@@ -1,6 +1,6 @@
 # Antimicrobial activity prediction from EU OpenScreen data
 
-Predicts growth inhibition across seven reference pathogens spanning Gram-negative and Gram-positive bacteria and Candida albicans. The training data come from an EU OpenScreen campaign in which roughly 100,000 compounds were screened through the European Chemical Biology Library, giving unusually consistent coverage since all seven organisms were tested against the same collection. Models were built with LazyQSAR and report a rank score rather than a calibrated probability.
+High throughput screening of the EU OpenScreen library (~100.000 compounds) against 7 pathogens of reference (A. baumannii, C. albicans, E. coli, E. faecalis, K. pneumoniae, P. aeruginosa, S. aureus). Assays were obtained from the European Chemical Biology Database and correspond to single point inhibitions with cut-offs ranging from 50 to 70% and incubation concentrations between 41.7 to 50 uM. Models were trained by Ersilia using LazyQSAR v3.6, achieving a mean AUROC of 0.94 (range 0.83-0.98) upon 5-fold crossvalidation.
 
 This model was incorporated on 2026-08-06.Last packaged on 2026-08-11.
 
@@ -28,13 +28,13 @@ This model was incorporated on 2026-08-06.Last packaged on 2026-08-11.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| abaumannii | float | high | LazyQSAR rank score for growth inhibition of Acinetobacter baumannii in EU OpenScreen primary screen EOS300185 (60% growth inhibition at 41.7 uM; 57 actives of 101023 compounds; 5-fold CV AUROC 0.977; recommended threshold 0.932) |
-| calbicans | float | high | LazyQSAR rank score for growth inhibition of Candida albicans in EU OpenScreen primary screen EOS300076 (70% growth inhibition at 50 uM; 171 actives of 100943 compounds; 5-fold CV AUROC 0.958; recommended threshold 0.906) |
-| ecoli | float | high | LazyQSAR rank score for growth inhibition of Escherichia coli in EU OpenScreen primary screen EOS300158 (50% growth inhibition at 50 uM; 78 actives of 101022 compounds; 5-fold CV AUROC 0.897; recommended threshold 0.909) |
-| efaecalis | float | high | LazyQSAR rank score for growth inhibition of Enterococcus faecalis in EU OpenScreen primary screen EOS300080 (70% growth inhibition at 50 uM; 125 actives of 100991 compounds; 5-fold CV AUROC 0.979; recommended threshold 0.936) |
-| kpneumoniae | float | high | LazyQSAR rank score for growth inhibition of Klebsiella pneumoniae in EU OpenScreen primary screen EOS300180 (50% growth inhibition at 41.7 uM; 139 actives of 101023 compounds; 5-fold CV AUROC 0.841; recommended threshold 0.897) |
-| paeruginosa | float | high | LazyQSAR rank score for growth inhibition of Pseudomonas aeruginosa in EU OpenScreen primary screen EOS300155 (50% growth inhibition at 41.7 uM; 14 actives of 101022 compounds; 5-fold CV AUROC 0.985 - based on only 14 actives so the AUROC carries very large variance; recommended threshold 0.933) |
-| saureus | float | high | LazyQSAR rank score for growth inhibition of Staphylococcus aureus in EU OpenScreen primary screen EOS300078 (70% growth inhibition at 50 uM; 378 actives of 100780 compounds; 5-fold CV AUROC 0.959; recommended threshold 0.889) |
+| abaumannii | float | high | LazyQSAR rank score for growth inhibition of Acinetobacter baumannii in EU OpenScreen primary screen EOS300185 (60% growth inhibition at 41.7 uM; 57 actives of 101023 compounds; 5-fold CV AUROC 0.975) |
+| calbicans | float | high | LazyQSAR rank score for growth inhibition of Candida albicans in EU OpenScreen primary screen EOS300076 (70% growth inhibition at 50 uM; 171 actives of 100943 compounds; 5-fold CV AUROC 0.953) |
+| ecoli | float | high | LazyQSAR rank score for growth inhibition of Escherichia coli in EU OpenScreen primary screen EOS300158 (50% growth inhibition at 50 uM; 78 actives of 101022 compounds; 5-fold CV AUROC 0.889) |
+| efaecalis | float | high | LazyQSAR rank score for growth inhibition of Enterococcus faecalis in EU OpenScreen primary screen EOS300080 (70% growth inhibition at 50 uM; 125 actives of 100991 compounds; 5-fold CV AUROC 0.978) |
+| kpneumoniae | float | high | LazyQSAR rank score for growth inhibition of Klebsiella pneumoniae in EU OpenScreen primary screen EOS300180 (50% growth inhibition at 41.7 uM; 139 actives of 101023 compounds; 5-fold CV AUROC 0.833) |
+| paeruginosa | float | high | LazyQSAR rank score for growth inhibition of Pseudomonas aeruginosa in EU OpenScreen primary screen EOS300155 (50% growth inhibition at 41.7 uM; 14 actives of 101022 compounds; 5-fold CV AUROC 0.974 - based on only 14 actives so the AUROC carries very large variance) |
+| saureus | float | high | LazyQSAR rank score for growth inhibition of Staphylococcus aureus in EU OpenScreen primary screen EOS300078 (70% growth inhibition at 50 uM; 378 actives of 100780 compounds; 5-fold CV AUROC 0.958) |
 
 
 ### Source and Deployment
