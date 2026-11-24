@@ -8,7 +8,7 @@ Description: High throughput screening of the EU OpenScreen library (~100.000
   obtained from the European Chemical Biology Database and correspond to single 
   point inhibitions with cut-offs ranging from 50 to 70% and incubation 
   concentrations between 41.7 to 50 uM. Models were trained by Ersilia using 
-  LazyQSAR v3.6, achieving a mean AUROC of 0.94 (range 0.83-0.98) upon 5-fold 
+  LazyQSAR v3.9, achieving a mean AUROC of 0.94 (range 0.83-0.98) upon 5-fold 
   crossvalidation.
 Deployment:
   - Local

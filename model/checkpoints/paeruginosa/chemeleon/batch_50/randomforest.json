@@ -6,13 +6,13 @@
   "n_features_in": 1778,
   "decision_cutoff_raw": 0.04,
   "decision_cutoff_raw_source": "oof_balanced_accuracy",
-  "decision_cutoff_proba": 0.010766481094570172,
+  "decision_cutoff_proba": 0.01076516860534788,
   "decision_cutoff_rank": 0.9735146743020758,
-  "decision_cutoff_logit": -4.520492714321594,
+  "decision_cutoff_logit": -4.52061595365053,
   "calibrator": {
     "method": "platt",
-    "coef": 2.474486566475032,
-    "intercept": -4.6194721769805955
+    "coef": 2.4738813255047583,
+    "intercept": -4.619571206670721
   },
   "ranker": {
     "knots": [
@@ -944,9 +944,6 @@
       0.0,
       0.0,
       0.0,
-      0.0,
-      0.0,
-      0.0,
       0.01,
       0.01,
       0.01,
@@ -1204,6 +1201,8 @@
       0.01,
       0.01,
       0.01,
+      0.01,
+      0.02,
       0.02,
       0.02,
       0.02,
@@ -1323,6 +1322,7 @@
       0.02,
       0.02,
       0.02,
+      0.03,
       0.03,
       0.03,
       0.03,
